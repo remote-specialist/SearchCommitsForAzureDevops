@@ -73,7 +73,7 @@ namespace AzureDevopsGitApi
                 }
             }
 
-            return commits.Distinct().ToList();
+            return commits;
         }
 
         public async Task<List<RepositoryModel>> GetRepositoriesAsync()
