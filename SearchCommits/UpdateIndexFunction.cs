@@ -25,7 +25,7 @@ namespace SearchCommits
         }
 
         [FunctionName("UpdateIndexFunction")]
-        public async Task Run([TimerTrigger("0 */2 * * * *")]TimerInfo myTimer, ILogger log)
+        public async Task Run([TimerTrigger("0 */30 * * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"{DateTime.Now} Function {nameof(UpdateIndexFunction)} started.");
             
